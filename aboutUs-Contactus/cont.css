@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+body {
+  background-color: white; 
+}
+.contact-header {
+  background-color: #0d6efd; 
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+}
+.contact-info {
+  margin-top: 30px;
+}
+.contact-info h5 {
+  color: #0d6efd; 
+}
+
+textarea {
+  resize: none;
+}
+
+footer ul li {
+  margin-bottom: 2px; 
+}

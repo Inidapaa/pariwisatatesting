@@ -1,0 +1,50 @@
+
+
+
+@media (max-width: 768px) {
+  .main-text p {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-text p {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}
+
+/* kode CSS untuk ukuran layar kecil */
+@media (max-width: 768px) {
+
+  .main-text p {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .booking-container {
+    width: 90%;
+    top: 60%;
+  }
+}
+
+/* kode CSS untuk ukuran layar sangat kecil */
+@media (max-width: 480px) {
+  ul li a {
+    font-size: 0.7rem;
+    padding-left: 0rem;
+  }
+
+
+  .main-text p {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+
+  .booking-container {
+    width: 90%;
+    top: 120%;
+  }
+}

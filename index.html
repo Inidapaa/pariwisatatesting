@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelin</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    /> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="landing-section">
+      <header class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <nav class="d-flex navbar-section px-5">
+              <div>
+                <h1 class="fs-2 fw-bold pt-2 title">
+                  Travelin.<span class="text-primary fs-5">id</span>
+                </h1>
+              </div>
+              <ul class="d-flex gap-3 pt-2">
+                <li>
+                  <a href="">Bookings</a>
+                </li>
+                <li><a href="/aboutUs-Contactus/about.html">Blog</a></li>
+                <li><a href="/aboutUs-Contactus/cont.html">Contact Us</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="row">
+          <section class="carousel prev">
+            <div class="list">
+              <div class="item">
+                <img src="assets/img1.jpg" alt="" class="overlay" />
+                <div class="content">
+                  <div class="title">Raja Ampat</div>
+                  <div class="des">
+                    Raja Ampat Regency, West Papua, Indonesia (-0.4500° S,
+                    130.6500° E)
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets/img2.jpg" alt="" class="overlay" />
+                <div class="content">
+                  <div class="title">Ijen Crater</div>
+                  <div class="des">
+                    Ijen Crater, Banyuwangi, East Java, Indonesia (8.0583° S,
+                    114.2422° E)
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets/img3.jpg" alt="" class="overlay" />
+                <div class="content">
+                  <div class="title">Mount Bromo</div>
+                  <div class="des">
+                    Mount Bromo, Probolinggo, East Java, Indonesia (-7.9423° S,
+                    112.9513° E)
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets/img4.jpg" alt="" class="overlay" />
+                <div class="content">
+                  <div class="title">Komodo Island</div>
+                  <div class="des">
+                    Komodo Island, West Manggarai, East Nusa Tenggara, Indonesia
+                    (-8.5833° S, 119.4333° E)
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets/img5.jpg" alt="" class="overlay" />
+                <div class="content">
+                  <div class="title">Labuan Bajo</div>
+                  <div class="des">
+                    West Manggarai Regency, East Nusa Tenggara, Indonesia
+                    (-8.4833° S, 119.8833° E)
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets/img6.jpg" alt="" class="overlay" />
+                <div class="content">
+                  <div class="title">Nusa Penida</div>
+                  <div class="des">
+                    Nusa Penida, Klungkung, Bali, Indonesia (-8.7333° S,
+                    115.5333° E)
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="thumbnail">
+              <div class="item">
+                <img src="assets/img1.jpg" alt="" />
+                <div class="content">
+                  <div class="title text-light text-center">Raja Ampat</div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets/img2.jpg" alt="" />
+                <div class="content">
+                  <div class="title text-light text-center">Ijen Crater</div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets/img3.jpg" alt="" />
+                <div class="content">
+                  <div class="title text-light text-center">Mt. Bromo</div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets/img4.jpg" alt="" />
+                <div class="content">
+                  <div class="title text-light text-center">Komodo Island</div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets/img5.jpg" alt="" />
+                <div class="content">
+                  <div class="title text-light text-center">Labuan Bajo</div>
+                </div>
+              </div>
+              <div class="item">
+                <img src="assets/img6.jpg" alt="" />
+                <div class="content">
+                  <div class="title text-light text-center">Nusa Penida</div>
+                </div>
+              </div>
+            </div>
+            <div class="arrows">
+              <button id="prev"><</button>
+              <button id="next">></button>
+            </div>
+          </section>
+        </div>
+        <section class="booking-container">
+          <h2>Get Your Tickets</h2>
+          <form>
+            <div class="row mb-3">
+              <div class="col-md-3">
+                <label for="destination" class="form-label">Destination</label>
+                <select class="form-select" id="destination">
+                  <option selected>Raja Ampat</option>
+                  <option>Ijen Creater</option>
+                  <option>Mount Bromo</option>
+                  <option>Komodo Natinoal Park</option>
+                  <option>Labuan Bajo</option>
+                  <option>Nusa Penida</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="visit-date" class="form-label">Visit Date</label>
+                <input type="date" class="form-control" id="visit-date" />
+              </div>
+              <div class="col-md-3">
+                <label for="tickets" class="form-label"
+                  >Number of Tickets</label
+                >
+                <select class="form-select" id="tickets">
+                  <option selected>1 Ticket</option>
+                  <option>2 Tickets</option>
+                  <option>3 Tickets</option>
+                  <option>4 Tickets</option>
+                  <option>5 Tickets</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="ticket-type" class="form-label">Ticket Type</label>
+                <select class="form-select" id="ticket-type">
+                  <option selected>Regular</option>
+                  <option>VIP</option>
+                  <option>Group</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Search Tickets
+            </button>
+          </form>
+        </section>
+
+        <!-- <section class="booking-container">
+          <h2>Your One Stop Gateway to Indonesia</h2>
+          <form>
+            <div class="row mb-3">
+              <div class="col-md-3">
+                <label for="from" class="form-label">From</label>
+                <select class="form-select" id="from">
+                  <option selected>Jakarta</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="to" class="form-label">To</label>
+                <select class="form-select" id="to">
+                  <option selected>Banda Neira</option>
+                  <option>Raja Ampat</option>
+                  <option>Bunaken</option>
+                  <option>Teluk Cendrawasih</option>
+                  <option>Labuan Bajo</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="departure" class="form-label">Departure Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="departure"
+                  value="2024-07-22"
+                />
+              </div>
+              <div class="col-md-3">
+                <label for="return" class="form-label">Return Date</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="return"
+                  value="2024-07-24"
+                />
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-3">
+                <label for="passengers" class="form-label">Passengers</label>
+                <select class="form-select" id="passengers">
+                  <option selected>1 Adult, 0 Child, 0 Infant</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label for="class" class="form-label">Class</label>
+                <select class="form-select" id="class">
+                  <option selected>Economy</option>
+                  <option>Business</option>
+                  <option>First Class</option>
+                </select>
+              </div>
+            </div>
+            <a href="" class="btn btn-light">Search</a>
+          </form>
+        </section> -->
+      </div>
+    </section>
+    <section class="content-section container-fluid" id="destinations">
+      <div class="col-12 text-center p-5">
+        <h1 class="title">Choose Your Destination</h1>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-9 d-flex flex-wrap justify-content-center gap-5">
+          <div class="card mb-3 rounded-4" style="width: 18rem">
+            <img src="assets/img7.jpg" class="card-img-top" alt="Raja Ampat" />
+            <div class="card-body">
+              <h5 class="card-title">Raja Ampat</h5>
+              <p class="card-text">
+                Explore the breathtaking beauty of Raja Ampat, a tropical
+                paradise in West Papua, Indonesia, known for its vibrant coral
+                reefs, diverse marine life, and stunning scenery.
+              </p>
+              <a href="#" class="btn btn-primary">Visit</a>
+            </div>
+          </div>
+          <div class="card mb-3 rounded-4" style="width: 18rem">
+            <img src="assets/img8.jpg" class="card-img-top" alt="Ijen Crater" />
+            <div class="card-body">
+              <h5 class="card-title">Ijen Crater</h5>
+              <p class="card-text">
+                Witness the mesmerizing blue flames and turquoise waters of
+                Kawah Ijen, a sulfuric crater lake in East Java, Indonesia, and
+                experience the raw power of nature's beauty.
+              </p>
+              <a href="#" class="btn btn-primary">Visit</a>
+            </div>
+          </div>
+          <div class="card mb-3 rounded-4" style="width: 18rem">
+            <img src="assets/img9.jpg" class="card-img-top" alt="Mount Bromo" />
+            <div class="card-body">
+              <h5 class="card-title">Mount Bromo</h5>
+              <p class="card-text">
+                Watch the sunrise over the majestic Gunung Bromo, an active
+                volcano in East Java, Indonesia, and marvel at the breathtaking
+                scenery of the surrounding landscape.
+              </p>
+              <a href="#" class="btn btn-primary">Visit</a>
+            </div>
+          </div>
+          <div class="card mb-3 rounded-4" style="width: 18rem">
+            <img
+              src="assets/img10.jpg"
+              class="card-img-top"
+              alt="Komodo Island"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Komodo Island</h5>
+              <p class="card-text">
+                Embark on a journey to the enchanting Komodo Island, a UNESCO
+                Biosphere Reserve in East Nusa Tenggara, Indonesia, and discover
+                the unique wildlife, pristine beaches, and the legendary Komodo
+                dragons that call this island home.
+              </p>
+              <a href="#" class="btn btn-primary">Visit</a>
+            </div>
+          </div>
+          <div class="card mb-3 rounded-4" style="width: 18rem">
+            <img
+              src="assets/img11.jpg"
+              class="card-img-top"
+              alt="Labuan Bajo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Labuan Bajo</h5>
+              <p class="card-text">
+                Escape to the charming town of Labuan Bajo, a picturesque
+                fishing village in East Nusa Tenggara, Indonesia, and explore
+                the stunning natural beauty of Flores Island, with its
+                crystal-clear waters, coral reefs, and majestic Komodo National
+                Park.
+              </p>
+              <a href="#" class="btn btn-primary">Visit</a>
+            </div>
+          </div>
+          <div class="card mb-3 rounded-4" style="width: 18rem">
+            <img
+              src="assets/img12.jpg"
+              class="card-img-top"
+              alt="Nusa Penida"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nusa Penida</h5>
+              <p class="card-text">
+                Discover the untouched beauty of Nusa Penida, a tranquil island
+                off the coast of Bali, Indonesia, with its rugged landscapes,
+                pristine beaches, and crystal-clear waters, perfect for
+                snorkeling, diving, and relaxation.
+              </p>
+              <a href="#" class="btn btn-primary">Visit</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center mt-4">
+          <a href="#" class="text-primary">See more...</a>
+        </div>
+      </div>
+    </section>
+    <section class="testimonial-section">
+      <div class="container">
+        <div class="col-12">
+          <h1 class="text-center p-5">Riviews</h1>
+          <div class="row justify-content-center">
+            <div
+              class="col-6 d-flex justify-content-center flex-wrap gap-5 m-5"
+            >
+              <div
+                class="testimonial-card flex-column d-flex justify-content-center align-items-center"
+                style="width: 18rem"
+              >
+                <img
+                  src="assets/person1.jpg"
+                  width="140px"
+                  height="140px"
+                  class="testimonial-img rounded-circle m-auto"
+                  alt="..."
+                />
+                <h4 class="testimonial-name text-center m-3">Name</h4>
+                <p class="testimonial-text text-center">
+                  "This website is very informative! All tourist destinations,
+                  accommodations, and activities are provided with detailed
+                  explanations."
+                </p>
+              </div>
+              <div
+                class="testimonial-card flex-column d-flex justify-content-center align-items-center"
+                style="width: 18rem"
+              >
+                <img
+                  src="assets/person2.jpg"
+                  width="140px"
+                  height="140px"
+                  class="testimonial-img rounded-circle m-auto"
+                  alt="..."
+                />
+                <h4 class="testimonial-name text-center m-3">Name</h4>
+                <p class="testimonial-text text-center">
+                  "The images and videos of the destinations are stunning. They
+                  really give a true sense of the places being offered."
+                </p>
+              </div>
+              <div
+                class="testimonial-card flex-column d-flex justify-content-center align-items-center"
+                style="width: 18rem"
+              >
+                <img
+                  src="assets/person3.jpg"
+                  width="140px"
+                  height="140px"
+                  class="testimonial-img rounded-circle m-auto"
+                  alt="..."
+                />
+                <h4 class="testimonial-name text-center m-3">Name</h4>
+                <p class="testimonial-text text-center">
+                  "The website navigation is simple and easy to use. I could
+                  quickly find locations and travel packages that fit my needs."
+                </p>
+              </div>
+              <div
+                class="testimonial-card flex-column d-flex justify-content-center align-items-center"
+                style="width: 18rem"
+              >
+                <img
+                  src="assets/person4.jpg"
+                  width="140px"
+                  height="140px"
+                  class="testimonial-img rounded-circle m-auto"
+                  alt="..."
+                />
+                <h4 class="testimonial-name text-center m-3">Name</h4>
+                <p class="testimonial-text text-center">
+                  "The destination recommendation feature is very helpful. I
+                  discovered many new places I hadn’t known about before."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-primary text-white pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3>About Us</h3>
+            <p>
+              Discover Indonesia’s best destinations. From beaches to mountains,
+              we offer travel tips, guides, and great deals to make your trip
+              unforgettable. Explore the beauty of Indonesia with us!
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3 class="">Quick Links</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-underline fs-6 fs-md-5"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#destinations"
+                  class="text-white text-decoration-underline fs-6 fs-md-5"
+                  >Destinations</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-white text-decoration-underline fs-6 fs-md-5"
+                  >Bookings</a
+                >
+              </li>
+              <li>
+                <a
+                  href="aboutUs-Contactus/about.html"
+                  class="text-white text-decoration-underline fs-6 fs-md-5"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="aboutUs-Contactus/cont.html"
+                  class="text-white text-decoration-underline fs-6 fs-md-5"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h3 class="">Contact Us</h3>
+            <ul class="list-unstyled">
+              <li>
+                <i class="bi bi-geo-alt-fill"></i> Soehat Street, Malang,
+                Indonesia
+              </li>
+              <li><i class="bi bi-telephone-fill"></i> +62 812 3456 7890</li>
+              <li>
+                <i class="bi bi-envelope-fill"></i> info@travelinwebsite.com
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col text-center">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              class="text-white me-3"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              class="text-white me-3"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              class="text-white me-3"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              class="text-white me-3"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              class="text-white me-3"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col text-center">
+            <p class="mb-0">
+              &copy; 2024 Travelin Website. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="scroll.js"></script>
+    <script src="app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
